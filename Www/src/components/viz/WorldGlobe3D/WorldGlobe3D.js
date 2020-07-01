@@ -80,9 +80,9 @@ const WorldGlobe3D = (props) => {
 
     // Add gradient color with three color stops
     var gradient = context.createLinearGradient(width/2, 0, width/2, height);
-    gradient.addColorStop(0, styles.all1mapCyan50);
-    gradient.addColorStop(.5, styles.all1mapYellow50);
-    gradient.addColorStop(1, styles.all1mapPink50);
+    gradient.addColorStop(0, styles.Cyan50);
+    gradient.addColorStop(.5, styles.Yellow50);
+    gradient.addColorStop(1, styles.Pink50);
 
     //drag renders
     function drag_start_render(){

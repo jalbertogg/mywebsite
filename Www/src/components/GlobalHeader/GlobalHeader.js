@@ -58,7 +58,7 @@ const GlobalHeader = (props) => {
             return (
               <Fragment>
                 <Header
-                  aria-label="All1Map"
+                  aria-label="JoseAlberto"
                   onClick={ isSideNavExpanded === true ? onClickSideNavExpand : null}
                   >
                   <SkipToContent />
@@ -68,7 +68,7 @@ const GlobalHeader = (props) => {
                     isActive={isSideNavExpanded}
                   />
                   <HeaderName element={NavLink} to="/" prefix="" className="brand-font">
-                    <img src={BrandIcon} className="brand-icon" alt=""/> All1Map
+                    <img src={BrandIcon} className="brand-icon" alt=""/> Jose Alberto
                   </HeaderName>
                   <HeaderNavigation aria-label="Carbon Tutorial">
                     <HeaderMenuItem element={NavLink} to="/about">About</HeaderMenuItem>

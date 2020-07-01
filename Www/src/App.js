@@ -32,12 +32,12 @@ const App = () => {
   return (
     <>
     <Helmet
-    defaultTitle="All1Map"
-    titleTemplate="%s | All1Map">
+    defaultTitle="Jose Alberto Garcia"
+    titleTemplate="%s | Jose Alberto Garcia">
         <html lang="en" />
         <meta charset="UTF-8" />
         <meta name="description" content="A catalog of useful tools to inspire, discover, and enjoy with real data visualisations and maps" />
-        <link rel="canonical" href="http://www.all1map.com" />
+        <link rel="canonical" href="http://www.josealbertogarcia.com" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 

@@ -1,13 +1,15 @@
 {
-  "name": "all1map",
+  "name": "JoseAlbertoGarciaGuijarro/Website",
   "version": "1.0.0",
-  "description": "Web project about ideas around interactive content on maps. ",
+  "description": "Personal Website about me and my professional projects. ",
   "main": "index.js",
   "author": "Jose Alberto Garcia Guijarro",
   "license": "MIT",
-  "repository": "github:jalbertogg/All1Map",
+  "repository": "github:jalbertogg/mywebsite",
   "keywords": [
-    "maps",
+    "UX",
+    "UI",
+    "Design",
     "dashboard",
     "data",
     "visualisations"

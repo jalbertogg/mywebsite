@@ -61,7 +61,7 @@ const Theme = () => {
         <Link href="#">This is a Link in a Tile</Link>
       </ClickableTile>
 
-      <Link href="#">This is a Link</Link>
+      <Link href="http://www.google.es" target="_blank">This is a Link</Link>
 
       <Form className="form_buttons">
         <FormGroup

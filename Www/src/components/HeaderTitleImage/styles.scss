@@ -118,26 +118,26 @@
 .dark-theme{
   .linechart {
     #Home_line_1{
-      stroke: $all1map-yellow-40;
+      stroke: $yellow-40;
     }
     #Home_line_2{
-      stroke: $all1map-cyan-40;
+      stroke: $cyan-40;
     }
     #Home_line_3{
-      stroke: $all1map-pink-40;
+      stroke: $pink-40;
     }
   }
 }
 .light-theme{
   .linechart {
     #Home_line_1{
-      stroke: $all1map-yellow-60;
+      stroke: $yellow-60;
     }
     #Home_line_2{
-      stroke: $all1map-cyan-60;
+      stroke: $cyan-60;
     }
     #Home_line_3{
-      stroke: $all1map-pink-60;
+      stroke: $pink-60;
     }
   }
 }

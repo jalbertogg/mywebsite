@@ -1,4 +1,4 @@
-@import '../../../_all1map-colors';
+@import '../../../theme';
 
 .linechart-demo{
   path{
@@ -12,26 +12,26 @@
 .dark-theme{
   .linechart-demo {
     .line-0{
-      stroke: $all1map-yellow-40;
+      stroke: $yellow-40;
     }
     .line-1{
-      stroke: $all1map-cyan-40;
+      stroke: $cyan-40;
     }
     .line-2{
-      stroke: $all1map-pink-40;
+      stroke: $pink-40;
     }
   }
 }
 .light-theme{
   .linechart-demo {
     .line-0{
-      stroke: $all1map-yellow-60;
+      stroke: $yellow-60;
     }
     .line-1{
-      stroke: $all1map-cyan-60;
+      stroke: $cyan-60;
     }
     .line-2{
-      stroke: $all1map-pink-60;
+      stroke: $pink-60;
     }
   }
 }

@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <>
       <HeaderTitleImage
-        title='All1Map'
+        title='Jose Alberto García'
         subtitle='A catalog of useful tools to inspire, discover, and enjoy with real data visualisations and maps'
       />
       <FeaturedTiles
