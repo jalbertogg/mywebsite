@@ -31,7 +31,10 @@ h1, .brand-font{
     background-color: $ui-background;
   }
   * {
-  @include carbon--theme($theme--dark, true);
+    @include carbon--theme($theme--dark, true);
+    .bx--radio-button__label span, .bx--checkbox-label-text{
+      color: $ui-01; //BUG: RadioButton labels does not take the proper theme color;
+    }
   }
 }
 
