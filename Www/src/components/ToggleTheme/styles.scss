@@ -1,0 +1,39 @@
+@import "carbon-components/scss/globals/scss/_vars";
+
+.toggle-theme-btn{
+  z-index: 7000;
+  position: fixed !important;
+  top: 0;
+  text-align: center;
+  right: 0;
+
+  .light-theme-icon, .dark-theme-icon{
+    transition: all 0.3s ease-in;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .dark-theme-icon.off{
+    transform: translateY(-24px);
+    opacity: 0;
+  }
+
+  .dark-theme-icon.on{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  .light-theme-icon.off{
+    transform: translateY(24px);
+    opacity: 0;
+  }
+
+  .light-theme-icon.on{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

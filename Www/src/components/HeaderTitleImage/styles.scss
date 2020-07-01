@@ -1,0 +1,143 @@
+@import "../../theme";
+@import "carbon-components/scss/globals/scss/_typography.scss";
+
+.header-title-image{
+
+  .linechart-container{
+    z-index: -1;
+    right: 0;
+    @include carbon--breakpoint("sm"){
+      position: absolute;
+      top: 200px;
+      width: 80%;
+      height: 330px;
+    }
+    @include carbon--breakpoint("md"){
+      top: 0;
+      width: 50%;
+      height: 355px;
+    }
+  }
+
+  @include carbon--breakpoint("sm"){
+    .header-text{
+      background-color: $key-color-70;
+      padding-top: $layout-03;
+    }
+    .world_container{
+      filter: drop-shadow(4px 0px 4px rgba(0, 0, 0, 0.5));
+    }
+    .world_globe{
+      background-color: $key-color-70;
+      clip-path: url(#home-path-sm);
+      padding-left: 0;
+      text-align: center;
+      padding-bottom: $layout-03;
+      canvas{
+        margin-left: -100px;
+        width: 250px;
+      }
+    }
+  }
+  @include carbon--breakpoint("md"){
+    .banner-container{
+      filter: drop-shadow(4px 0px 4px rgba(0, 0, 0, 0.5));
+    }
+    .banner{
+      clip-path: url(#home-path-md);
+      background-color: $key-color-70;
+      padding-bottom: $layout-03;
+    }
+    .header-text{
+      background-color: transparent;
+    }
+    .world_container{
+      filter: none;
+      padding-bottom: $layout-05;
+    }
+    .world_globe{
+      clip-path: none;
+      background-color: transparent;
+      padding-left: $layout-01;
+      padding-top: $spacing-06;
+      canvas{
+        margin-left: 0;
+        width: 300px;
+      }
+    }
+  }
+  @include carbon--breakpoint("lg"){
+    .banner{
+      clip-path: url(#home-path-lg);
+      padding-bottom: $layout-06;
+    }
+    .world_container{
+      padding-bottom: $layout-06;
+    }
+  }
+
+  .title{
+    @include carbon--type-style("productive-heading-07");
+    @include carbon--theme($theme--dark){
+      color: $text-01;
+    }
+    user-select: none;
+
+    @include carbon--breakpoint("sm"){
+      margin-top: $spacing-06;
+      text-align: center;
+    }
+    @include carbon--breakpoint("md"){
+      margin-top: $spacing-06;
+      text-align: left;
+    }
+    @include carbon--breakpoint("xlg"){
+      margin-top: $spacing-07;
+    }
+  }
+
+  .subtitle {
+    @include carbon--type-style("body-long-02");
+    @include carbon--theme($theme--dark){
+      color: $text-01;
+    }
+    user-select: none;
+
+    @include carbon--breakpoint("sm"){
+      margin-top: $spacing-03;
+      margin-bottom: $spacing-09;
+      text-align: center;
+    }
+    @include carbon--breakpoint("md"){
+      margin-top: $spacing-06;
+      text-align: left;
+    }
+  }
+}
+
+.dark-theme{
+  .linechart {
+    #Home_line_1{
+      stroke: $all1map-yellow-40;
+    }
+    #Home_line_2{
+      stroke: $all1map-cyan-40;
+    }
+    #Home_line_3{
+      stroke: $all1map-pink-40;
+    }
+  }
+}
+.light-theme{
+  .linechart {
+    #Home_line_1{
+      stroke: $all1map-yellow-60;
+    }
+    #Home_line_2{
+      stroke: $all1map-cyan-60;
+    }
+    #Home_line_3{
+      stroke: $all1map-pink-60;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+@import "carbon-components/scss/globals/scss/_vars";
+@import "carbon-components/scss/globals/scss/_typography.scss";
+
+footer {
+  background-color: #030303;
+  color: #C6C6C6;
+  padding-top: $spacing-07;
+  padding-bottom: $layout-06;
+
+  a{
+    @include carbon--type-style('body-long-01');
+    color: #F4F4F4;
+  }
+
+  .footer-legal ul, .footer-social ul {
+    margin-bottom: $spacing-06;
+    @include carbon--breakpoint("sm"){
+      &::after{
+        content: '';
+        height: 1px;
+        width: 100%;
+        background-color: #393939;
+        display: block;
+        margin-top: $spacing-09;
+      }
+    }
+    @include carbon--breakpoint("md"){
+      &::after{
+        display: none;
+      }
+    }
+    a{
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .footer-info {
+    p {
+      @include carbon--type-style('body-long-01');
+      &:nth-child(1){
+        margin-bottom: $spacing-06;
+      }
+    }
+  }
+
+  #love-icon{
+    fill: white;
+    vertical-align: bottom;
+  }
+
+}

@@ -1,0 +1,73 @@
+@import "./all1map-colors";
+
+
+$key-color-100: $all1map-purple-100;
+$key-color-90: $all1map-purple-90;
+$key-color-80: $all1map-purple-80;
+$key-color-70: $all1map-purple-70;
+$key-color-60: $all1map-purple-60;
+$key-color-50: $all1map-purple-50;
+$key-color-45: $all1map-purple-45;
+$key-color-40: $all1map-purple-40;
+$key-color-30: $all1map-purple-30;
+$key-color-20: $all1map-purple-20;
+$key-color-10: $all1map-purple-10;
+$key-color-0: $all1map-purple-0;
+
+
+//All1Map Dark theme
+$theme--dark: map-merge(
+  $carbon--theme--g100,
+  (
+    interactive-01: $key-color-50,
+    interactive-04: $key-color-40,
+    inverse-support-04: #0344cb,
+    visited-link: #8e6fa9,
+    hover-primary-text: $key-color-20,
+    hover-primary: $key-color-45,
+    highlight: $key-color-80,
+    active-primary: $key-color-60,
+    support-04: #488afc,
+    link-01: $key-color-30,
+    inverse-focus-ui: $key-color-50,
+    inverse-link: $key-color-50,
+  )
+) !default;
+
+
+//All1Map Light theme
+$theme--light: map-merge(
+  $carbon--theme--white,
+  (
+    interactive-01: $key-color-50,
+    interactive-03: $key-color-50,
+    interactive-04: $key-color-50,
+    visited-link: #8E6FA9,
+    hover-primary-text: $key-color-70,
+    hover-primary: $key-color-45,
+    hover-tertiary: $key-color-45,
+    highlight: $key-color-10,
+    focus: $key-color-50,
+    active-primary: $key-color-60,
+    active-tertiary: $key-color-60,
+    link-01: #7103D3,
+    inverse-support-04: #488AFC,
+    inverse-link: #CB91FD,
+  )
+) !default;
+
+
+:export {
+  keyColor100: $key-color-100;
+  keyColor90: $key-color-90;
+  keyColor80: $key-color-80;
+  keyColor70: $key-color-70;
+  keyColor60: $key-color-60;
+  keyColor50: $key-color-50;
+  keyColor45: $key-color-45;
+  keyColor40: $key-color-40;
+  keyColor30: $key-color-30;
+  keyColor20: $key-color-20;
+  keyColor10: $key-color-10;
+  keyColor0: $key-color-0;
+}

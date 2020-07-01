@@ -1,0 +1,16 @@
+.theme {
+  & > * {
+    margin: 24px;
+  }
+
+  .form_buttons{
+    button{
+      margin: 24px;
+    }
+  }
+
+  .bx--select-input {
+    -webkit-appearance: none;
+  }
+
+}

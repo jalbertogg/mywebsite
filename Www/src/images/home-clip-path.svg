@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1px" height="1px" viewBox="0 0 1 1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Mask</title>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1x1-path-lg">
+            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="0.5" y="0.5" width="1" height="1"></rect>
+            <path d="M0,7.10542736e-16 C0.750169887,7.10542736e-16 1.07827363,7.10542736e-16 0.984311228,7.10542736e-16 C0.843367625,7.10542736e-16 0.958429654,0.219506969 0.712964768,0.302402651 C0.44671896,0.392316236 0.335101216,0.181027341 0,0.415907208 C0,0.415907208 0,0.277271472 0,7.10542736e-16 Z" id="Mask" fill="#000000"></path>
+        </g>
+        <g id="1x1-path-xlg">
+            <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="0.5" y="0.5" width="1" height="1"></rect>
+            <path d="M4.96947453e-05,0 C0.615486655,0 0.876223934,0 0.782261533,0 C0.64131793,0 0.756379959,0.669228563 0.510915073,0.921959302 C0.306520698,1.13240383 0.19325617,0.801649307 4.96947453e-05,0.96060638 C-1.65649151e-05,0.96060638 -1.65649151e-05,0.640404254 4.96947453e-05,0 Z" id="Mask" fill="#000000"></path>
+        </g>
+    </g>
+</svg>

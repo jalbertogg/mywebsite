@@ -1,0 +1,37 @@
+@import '../../../_all1map-colors';
+
+.linechart-demo{
+  path{
+    fill: none;
+    stroke-width: 1.5;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+  }
+}
+
+.dark-theme{
+  .linechart-demo {
+    .line-0{
+      stroke: $all1map-yellow-40;
+    }
+    .line-1{
+      stroke: $all1map-cyan-40;
+    }
+    .line-2{
+      stroke: $all1map-pink-40;
+    }
+  }
+}
+.light-theme{
+  .linechart-demo {
+    .line-0{
+      stroke: $all1map-yellow-60;
+    }
+    .line-1{
+      stroke: $all1map-cyan-60;
+    }
+    .line-2{
+      stroke: $all1map-pink-60;
+    }
+  }
+}

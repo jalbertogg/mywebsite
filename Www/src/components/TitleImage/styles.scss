@@ -1,0 +1,56 @@
+@import "../../theme";
+@import "carbon-components/scss/globals/scss/_typography.scss";
+
+@mixin title-image{
+  .title-image{
+    padding-top: $layout-03;
+
+    .title{
+      @include carbon--type-style("productive-heading-07");
+      color: $text-01;
+      user-select: none;
+
+      @include carbon--breakpoint("sm"){
+        text-align: center;
+      }
+      @include carbon--breakpoint("md"){
+        margin-top: $spacing-03;
+        text-align: left;
+      }
+      @include carbon--breakpoint("lg"){
+        margin-top: $spacing-07;
+      }
+      @include carbon--breakpoint("xlg"){
+        margin-top: $spacing-09;
+      }
+    }
+
+    .subtitle {
+      @include carbon--type-style("body-long-02");
+      color: $text-01;
+      user-select: none;
+
+      @include carbon--breakpoint("sm"){
+        margin-top: $spacing-03;
+        margin-bottom: $spacing-09;
+        text-align: center;
+      }
+      @include carbon--breakpoint("md"){
+        margin-top: $spacing-06;
+        text-align: left;
+      }
+    }
+  }
+}
+
+.dark-theme {
+  @include carbon--theme($theme--dark){
+    @include title-image();
+  }
+}
+
+.light-theme {
+  @include carbon--theme($theme--light){
+    @include title-image();
+  }
+}

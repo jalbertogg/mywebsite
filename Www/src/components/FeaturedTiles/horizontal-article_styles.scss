@@ -1,0 +1,92 @@
+@import "carbon-components/scss/globals/scss/_typography.scss";
+@import "../../theme";
+
+@mixin article(){
+  .bx--article-card-horizontal .bx--tile{
+    padding: 0;
+    display: flex;
+    margin-bottom: $layout-03;
+
+    @include carbon--breakpoint("sm"){
+      flex-flow: column;
+    }
+    @include carbon--breakpoint("md"){
+      flex-flow: row;
+    }
+
+    .bx--article-card__img{
+      flex: 1 1 0;
+      .cover {
+        padding: $spacing-06;
+        text-align: center;
+
+        span{
+          @include carbon--type-style("productive-heading-05");
+          display: block;
+          font-weight: bold;
+          mix-blend-mode: soft-light;
+          color: $text-01;
+          margin-bottom: $spacing-03;
+          margin-top: $spacing-06;
+        }
+
+        svg{
+          fill: white;
+          margin: 0 $spacing-02;
+        }
+
+      }
+    }
+    .bx--article-card__details{
+      flex: 2 1 0;
+      padding: $spacing-05;
+
+      .bx--article-card-title{
+        @include carbon--type-style("productive-heading-03");
+        margin-bottom: $spacing-05;
+      }
+      .bx--article-card-subtitle{
+        @include carbon--type-style("body-long-01");
+        color: $text-02;
+        margin-bottom: $spacing-09;
+      }
+      .bx--article-card-author-date{
+        @include carbon--type-style("caption-01");
+        color: $text-02;
+
+        @include carbon--breakpoint("md"){
+          position: absolute;
+          bottom: $spacing-05;
+        }
+      }
+    }
+  }
+}
+
+.dark-theme {
+  @include carbon--theme($theme--dark){
+    @include article();
+    .bx--article-card-horizontal .cover{
+      @include carbon--breakpoint("sm"){
+        background-image: linear-gradient($key-color-80,transparent);
+      }
+      @include carbon--breakpoint("md"){
+        background-image: linear-gradient(to right,$key-color-80,transparent);
+      }
+    }
+  }
+}
+
+.light-theme {
+  @include carbon--theme($theme--light){
+    @include article();
+    .bx--article-card-horizontal .cover{
+      @include carbon--breakpoint("sm"){
+        background-image: linear-gradient($key-color-80,transparent);
+      }
+      @include carbon--breakpoint("md"){
+        background-image: linear-gradient(to right,$key-color-80,transparent);
+      }
+    }
+  }
+}

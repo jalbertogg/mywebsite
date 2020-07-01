@@ -1,0 +1,44 @@
+@import "../../theme";
+
+.bx--side-nav__items .bx--header__menu-item {
+  @include carbon--theme($theme--light){
+    &.active{
+      border: none;
+      &::after{
+        content: none !important;
+      }
+      &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 4px;
+        background-color: $interactive-01;
+      }
+    }
+    &:focus{
+      outline-color: $interactive-01 !important;
+    }
+  }
+}
+
+.bx--header__menu-item.active{
+  @include carbon--theme($theme--dark){
+    &::after {
+      border-bottom-color: $interactive-04 !important;
+    }
+  }
+}
+
+.bx--header__menu-trigger, .bx--header__menu-bar .bx--header__action , .bx--header__menu-bar .bx--header__menu-item, .toggle-theme-btn{
+  @include carbon--theme($theme--dark){
+    color: $text-04 !important;
+    &:hover{
+      background-color: $key-color-70 !important;
+    }
+    &:active{
+      background-color: $active-primary !important;
+    }
+  }
+}
